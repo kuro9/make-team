@@ -18,6 +18,9 @@ async def on_ready():
     print(discord.__version__)
     print('------------------------')
 
+"""状態設定"""
+await client.change_presence(activity=discord.Game(name = 'チーム分け分け'))
+    
 """コマンド実行"""
 # メンバー数が均等になるチーム分け
 @bot.command()
