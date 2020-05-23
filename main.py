@@ -44,6 +44,3 @@ async def group(ctx, specified_num=1):
 
 """botの接続と起動"""
 bot.run(token)
-
-"""状態設定"""
-await client.change_presence(activity=discord.Game(name = 'チーム分け分け'))    
