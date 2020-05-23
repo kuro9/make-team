@@ -18,9 +18,7 @@ async def on_ready():
     print(discord.__version__)
     print('------------------------')
 
-"""状態設定"""
-await client.change_presence(activity=discord.Game(name = 'チーム分け分け'))
-    
+
 """コマンド実行"""
 # メンバー数が均等になるチーム分け
 @bot.command()
@@ -46,3 +44,6 @@ async def group(ctx, specified_num=1):
 
 """botの接続と起動"""
 bot.run(token)
+
+"""状態設定"""
+await client.change_presence(activity=discord.Game(name = 'チーム分け分け'))    
